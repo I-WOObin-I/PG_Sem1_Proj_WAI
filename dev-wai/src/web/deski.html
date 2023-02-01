@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script src="Script1.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowboard</title>
+</head>
+<body onload="initiateComparison(), showHistory()">
+    <header>
+        <div class="headlogo">
+            <img id="logo" src="src_img/logo.png" alt="logo"/>
+        </div>
+    </header>
+    <nav>
+        <div id="navbutback">
+            <div class="drop">
+                <button id="navbut0" onclick="navbut0click()"> = </button>
+                <div id="dropcont">
+                    <a href="/index.html" class="navbut">aktualności</a>
+                    <a href="/deski.html" class="navbut">deski</a>
+                    <a href="/miejsca.html" class="navbut">miejsca</a>
+                    <a href="/zawodowe.html" class="navbut">zawodowe</a>
+                    <a href="/sklep.html" class="navbut">sklep</a>
+                    <a href="/eventy.html" class="navbut">eventy</a>
+                    <a href="/kontakt.html" class="navbut">kontakt</a>
+                </div>
+            </div>
+            <a href="/index.html" class="navbut" id="navbut1">
+                    aktualności
+            </a>
+            <a href="/deski.html" class="navbutakt" id="navbut2">
+                deski
+            </a>
+            <a href="/miejsca.html" class="navbut" id="navbut3">
+                miejsca
+            </a>
+            <a href="/zawodowe.html" class="navbut" id="navbut4">
+                zawodowe
+            </a>
+            <a href="/sklep.html" class="navbut" id="navbut5">
+                sklep
+            </a>
+            <a href="/eventy.html" class="navbut" id="navbut6">
+                eventy
+            </a>
+        </div>
+    </nav>
+
+    <div class="porownaj">
+        <button class="porownajbut" title="sprawdź porównanie"> &#9878; </button>
+        <div id="imgPor1div">
+
+        </div>
+        <div id="imgPor2div">
+
+        </div>
+    </div>
+    <div class="plane">
+        <div class="paper">
+            <div class="deska">
+                <button onclick="addToComparison('Lib Tech Travis Pro Hp C2', 'freeride', 'standardowa', 'standardowe', 'twin tip', 'hybrid', 'średnia', 'spiekany','src_img/deska1.jpg')" class="dodanieporownania" title="dodaj do porównania"> &#9878; </button>
+                <a href="/deska1.html"><img src="src_img/deska1.jpg" class="deski_img" id="deska1img" alt="deska"/></a><br />
+                <div class="deska_text">
+                    Lib Tech Travis Pro Hp C2 <br /><br />
+                    styl jazdy: freeride <br /><br />
+                    szerokość: standardowa <br /><br />
+                    mocowanie wiązań: standardowe <br /><br />
+                    kształt deski: twin tip <br /><br />
+                    profil deski: hybrid <br /><br />
+                    sztywność deski: średnia <br /><br />
+                    ślizg: spiekany <br /><br />
+                </div>
+            </div>
+            <div class="deska">
+                <button onclick="addToComparison('Salomon Sickstick','freeride','standardowa','standardowe','tapered twin','hybrid','średnia','spiekany','src_img/deska2.jpg')" class="dodanieporownania" title="dodaj do porównania"> &#9878; </button>
+                <a href="/deska2.html"><img src="src_img/deska2.jpg" class="deski_img" alt="deska"/></a> <br />
+                <div class="deska_text">
+                    Salomon Sickstick <br /><br />
+                    styl jazdy: freeride <br /><br />
+                    szerokość: standardowa <br /><br />
+                    mocowanie wiązań: standardowe <br /><br />
+                    kształt deski: tapered twin <br /><br />
+                    profil deski: hybrid <br /><br />
+                    sztywność deski: średnia <br /><br />
+                    ślizg: spiekany <br /><br />
+                </div>
+            </div>
+            <div class="deska">
+                <button onclick="addToComparison('Burton Yeasayer','freeride','standardowa','the channel','twin tip','flat','niska','tłoczony','src_img/deska3.jpg')" class="dodanieporownania" title="dodaj do porównania"> &#9878; </button>
+                <a href="/deska3.html"><img src="src_img/deska3.jpg" class="deski_img" alt="deska"/></a> <br />
+                <div class="deska_text">
+                    Burton Yeasayer <br /><br />
+                    styl jazdy: freeride <br /><br />
+                    szerokość: standardowa <br /><br />
+                    mocowanie wiązań: the channel <br /><br />
+                    kształt deski: twin tip <br /><br />
+                    profil deski: flat <br /><br />
+                    sztywność deski: niska <br /><br />
+                    ślizg: tłoczony <br /><br />
+                </div>
+            </div>
+            <div class="deska">
+                <button onclick="addToComparison('Lib Tech Ejack Knife C3','freeride','duża','standardowe','directional','hybrid','średnia','spiekany','src_img/deska4.jpg')" class="dodanieporownania" title="dodaj do porównania"> &#9878; </button>
+                <a href="/deska4.html"><img src="src_img/deska4.jpg" class="deski_img" alt="deska"/></a> <br />
+                <div class="deska_text">
+                    Lib Tech Ejack Knife C3 <br /><br />
+                    styl jazdy: freeride <br /><br />
+                    szerokość: duża <br /><br />
+                    mocowanie wiązań: standardowe <br /><br />
+                    kształt deski: directional <br /><br />
+                    profil deski: hybrid <br /><br />
+                    sztywność deski: średnia <br /><br />
+                    ślizg: spiekany <br /><br />
+                </div>
+            </div>
+            <div class="deska">
+                <button onclick="addToComparison('Roxy Torah Bright','all-mountain','standardowa','standardowe','twin tip','hybrid','duża','spiekany','src_img/deska5.jpg')" class="dodanieporownania" title="dodaj do porównania"> &#9878; </button>
+                <a href="/deska5.html"><img src="src_img/deska5.jpg" class="deski_img" alt="deska"/></a> <br />
+                <div class="deska_text">
+                    Roxy Torah Bright <br /><br />
+                    styl jazdy: all-mountain <br /><br />
+                    szerokość: standardowa <br /><br />
+                    mocowanie wiązań: standardowe <br /><br />
+                    kształt deski: twin tip <br /><br />
+                    profil deski: hybrid <br /><br />
+                    sztywność deski: duża <br /><br />
+                    ślizg: spiekany <br /><br />
+                </div>
+            </div>
+            <div class="deska">
+                <button onclick="addToComparison('Arbor Element Black Camber','freeride','duża','standardowe','directional','camber','średnia','tłoczony','src_img/deska6.jpg')" class="dodanieporownania" title="dodaj do porównania"> &#9878; </button>
+                <a href="/deska6.html"><img src="src_img/deska6.jpg" class="deski_img" alt="deska"/></a> <br />
+                <div class="deska_text">
+                    Arbor Element Black Camber <br /><br />
+                    styl jazdy: freeride <br /><br />
+                    szerokość: duża <br /><br />
+                    mocowanie wiązań: standardowe <br /><br />
+                    kształt deski: directional <br /><br />
+                    profil deski: camber <br /><br />
+                    sztywność deski: średnia <br /><br />
+                    ślizg: tłoczony <br /><br />
+                </div>
+            </div>
+        </div>
+        <div id="history">
+                <p class="histpara">
+                    ostatnio oglądane:
+                </p>         
+        </div>
+    </div>
+    <div id="dialog" title="porównanie">
+    </div>
+    <footer>
+        autor: Michał Łubiński, s184603 <br />
+        projekt 1 na wytwarzani aplikacji intenetowych (WAI)
+    </footer>
+</body>
+</html>

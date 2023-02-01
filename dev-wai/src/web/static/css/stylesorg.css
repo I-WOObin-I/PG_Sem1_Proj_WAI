@@ -1,0 +1,465 @@
+﻿html { 
+    width: 100%;
+}
+body {
+    background-image: url("wallpaper1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    width: 100%;
+}
+header {
+    background-color: #555555;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+#p1 {
+    width: 180px;
+    border-radius: 15px;
+}
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    width: 100%;
+    background-color: #555555;
+    padding: 7px;
+    height: 25px;
+    z-index: 2;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#navbutback {
+    margin: auto;
+    width: 1200px;
+    
+}
+
+.plane {
+    margin: auto;
+
+    min-height: 1000px;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+.navbutakt {
+    float: left;
+    width: 100px;
+    height: 15px;
+    padding: 5px;
+    background-color: #AAAAAA;
+    border-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+.navbutakt:hover {
+    background-color: black;
+    color: white;
+    cursor: inherit;
+}
+
+.navbut {
+    float: left;
+    width: 100px;
+    height: 15px;
+    padding: 5px;
+    background-color: white;
+    border-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+}
+.navbut:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#navbut0 {
+    float: left;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    background-color: white;
+    border-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 3px;
+    font-size: 15px;
+}
+#navbut0:hover {
+    background-color: black;
+    color: white;
+}
+
+.deska {
+    float: left;
+
+    color: white;
+    font-size: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    width: 25%;
+    text-align: center;
+}
+.deski_img {
+    width: 250px;
+    z-index: -1;
+}
+.deska_img {
+    width: 500px;
+    z-index: -1;
+
+    float: left;
+}
+.deska_text {
+    width: 100%;
+    text-align: center;
+    background-color: #757575;
+}
+.deska2_text {
+    margin-top: 30px;
+    margin: 15px;
+    width: 500px;
+    text-align: center;
+    background-color: #757575;
+    color: white;
+    float: right;
+}
+.dodanieporownania {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top:  5px;
+    z-index: 3;
+    position: absolute;
+}
+.dodanieporownania:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;   
+}
+
+.porownaj {
+    width: 120px;
+    height: 60px;
+    z-index: 4;
+    position: fixed;
+    background-color: white;
+    margin-top: 230px;
+}
+.porownajbut {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .porownaj {
+        width: 50px;
+        height: 50px;
+    }
+    .porownajbut {
+        font-size: 20px;
+    }
+}
+.porownajbut:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#dropcont {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    width: 120px;
+    top: 32px;
+    background-color: #555555;
+    /padding-bottom: 5px;
+    padding-top: 5px;
+}
+.drop:hover #dropcont {
+    display: block;
+}
+
+footer {
+    clear: both;
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    color: #BBBBBB;
+    padding: 5%;
+}
+.paper {
+    background-color: #454545;
+    width: 100%;
+    position: relative;
+    float: left;
+    z-index: 0;
+    margin-bottom: 10px;
+    min-height: 1000px;
+}
+.sidepaper {
+    background-color: #454545;
+    width: 13%;
+    height: 100%;
+    position: relative;
+    float: right;
+    z-index: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.banner {
+    width: 100%;
+    height: 600px;
+
+}
+#history {
+    width: 100%;
+    height: 200px;
+    background-color: #454545;
+    height: 250px;
+    clear: both;
+
+}
+.paging {
+    width: 100%;
+    height: 200px;
+    background-color: #454545;
+    height: 250px;
+    clear: both;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+.pagelink {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    
+}
+
+.miejscaimg {
+    width: 100%;
+    margin: 5px;
+}
+
+p {
+    color: white;
+}
+
+#tabs {
+    background-color: #454545;
+    color: white;
+    border: none;
+}
+
+.miejsceimgdiv {
+    float: left;
+    width: 33.3%;
+    margin: 10px;
+}
+
+.dialogimg {
+    width: 50%;
+}
+
+.dialogart {
+    width: 50%;
+    float: left;
+}
+.dialogpara {
+    width: 100%;
+    color: black;
+
+}
+
+.histpara {
+    color: white;
+    padding-bottom 60px;
+    clear: both;
+    margin: 15px;
+    font-size: 25px;
+}
+
+#logo {
+    margin: auto;
+    height: 60px;
+}
+
+#tabs {
+    display: none;
+}
+
+#tabsalt {
+    display: block;
+}
+
+.tabsart {
+    margin: 15px;
+    margin-bottom: 50px;
+    border-bottom: solid;
+}
+
+.login_plane {
+    margin: 15px;
+    padding: 5px;
+    color: white;
+    width: 200px;
+}
+#login_but {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin: -5px;
+}
+#login_guy {
+    height: 35px;
+    width: 35px;
+}
+.login_text {
+    color: white;
+    float: right;
+}
+.user_text {
+    color: white;
+    font-size: 40px;
+    margin: 20px;
+}
+.user_links {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.checkbox_product {
+    width: 20px;
+    height: 20px;
+}
+
+.permission_div {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    z-index: 5;
+    position: absolute;
+    background-color: red;
+}
+
+.edit_form {
+    color: white;
+    padding-left: 15px;
+}
+
+.zapamietaj_but {
+    margin-left: 0px;
+
+}
+
+.img_deska {
+    width: 500px;
+}
+
+.product_plane {
+    width: 100%;
+}
+
+.product_img {
+    width: 500px;
+    float: left;
+    margin: 15px;
+}
+.permission_div {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    background-color: red;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .paper {
+        width: 100%;
+    }
+
+    .sidepaper {
+        width: 100%;
+    }
+
+    .plane {
+        width: 100%;
+    }
+
+    #navbutback {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .deska {
+        width: 33.3%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .deska {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .deska {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #navbut6 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #navbut5 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 530px) {
+    #navbut4 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 410px) {
+    #navbut3 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 290px) {
+    #navbut2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 170px) {
+    #navbut1 {
+        display: none;
+    }
+}
